@@ -16,7 +16,7 @@ import os
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR,'main_app/static')]
+STATICFILES_DIRS = [os.path.join('main_app/static')]
 
 from pathlib import Path
 from decouple import config

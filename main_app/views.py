@@ -11,7 +11,7 @@ class Home(TemplateView):
 
 class List(TemplateView):
         template_name='list.html'
-        model = List
+        model = list
    
 
 
