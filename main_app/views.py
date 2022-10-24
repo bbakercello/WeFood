@@ -11,20 +11,7 @@ class Home(TemplateView):
 
 class List(TemplateView):
         template_name='list.html'
+        model = List
+   
 
-        def get_context_data(self, **kwargs):
-            context = super().get_context_data(**kwargs)
-            context["lists"] = lists
-            return context
-
-class List:
-    def __init__(self,owner,items):
-        self.owner = owner
-        self.items = items
-
-lists = [
-    List("Ben Baker",['apple','orange','chicken thighs','yogurt']),
-    List("Brenna Langille", ['pickles','green cola','sausages','peppers'],
-    List("Devin Larsen",['tempeh','grains','ointment','toothpaste']))
-]
 
